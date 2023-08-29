@@ -34,6 +34,15 @@ class AuthGate extends StatelessWidget {
                 providerConfigs: const [
                   EmailProviderConfiguration(),
                 ],
+                footerBuilder: (context, _) {
+                  return const Padding(
+                    padding: EdgeInsets.only(top: 280),
+                    child: Text(
+                      'By signing in, you agree to our terms and conditions.',
+                      style: TextStyle(color: Colors.grey),
+                    ),
+                  );
+                },
               ),
             );
           }
