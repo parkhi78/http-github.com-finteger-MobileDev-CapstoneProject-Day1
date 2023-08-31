@@ -512,6 +512,7 @@ class _HomeState extends State<Home> {
               label: 'Contact Us',
             ),
           ],
+            // Callback function when a navigation item is tapped
           onTap: (int index) {
             switch (index) {
               case 0:
